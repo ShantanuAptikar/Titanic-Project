@@ -1,0 +1,26 @@
+import joblib
+import pandas as pd
+
+new_passenger = pd.DataFrame({
+    'Pclass': [3],
+    'Age': [22],
+    'SibSp': [1],
+    'Parch': [0],
+    'Fare': [7.25],
+    'FamilySize': [2],
+    'IsAlone': [0],
+    'Sex_female': [1],
+    'Sex_male': [0],
+    'Embarked_C': [0],
+    'Embarked_Q': [0],
+    'Embarked_S': [1]
+})
+model_lr = joblib.load("lregression.pkl")
+model_svm = joblib.load("SVM.pkl")
+model_knn = joblib.load("KNN.pkl")
+prediction_lr = model_lr.predict(new_passenger)
+prediction_svm = model_svm.predict(new_passenger)
+prediction_knn = model_knn.predict(new_passenger)
+print("Logistic Regression:", prediction_lr)
+print("SVM:", prediction_svm)
+print("KNN:", prediction_knn)
