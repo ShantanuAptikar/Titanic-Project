@@ -1,0 +1,102 @@
+Titanic Survival Prediction using Machine Learning
+Project Overview
+
+This project predicts whether a passenger would survive the Titanic disaster based on passenger information such as passenger class, age, sex, family information, fare, and port of embarkation.
+
+The project was developed as part of my Machine Learning learning and practice.
+
+Machine Learning Algorithms
+
+The project uses three classification algorithms:
+
+Logistic Regression
+Support Vector Machine (SVM)
+K-Nearest Neighbors (KNN)
+
+The predictions from the trained models are displayed through a Streamlit web application.
+
+Dataset
+
+The project uses the Titanic dataset containing passenger information such as:
+
+Passenger class
+Age
+Sex
+Number of siblings/spouses
+Number of parents/children
+Fare
+Port of embarkation
+Survival status
+
+The dataset contains 891 passenger records.
+
+Data Preprocessing
+
+The project includes preprocessing steps such as:
+
+Handling missing values
+Feature engineering
+Creating FamilySize
+Creating IsAlone
+Encoding categorical variables
+Preparing features for machine learning models
+
+The final model input contains 12 features.
+
+Project Structure
+titanic-survival-prediction/
+│
+├── app.py
+├── Titanic project 23-9-26.py
+├── titanic.new
+├── Titanic-Dataset (1).csv
+├── lregression.pkl
+├── SVM.pkl
+├── KNN.pkl
+├── requirements.txt
+└── README.md
+Streamlit Application
+
+The Streamlit application allows users to enter passenger details and receive predictions from all three trained machine learning models.
+
+The application displays:
+
+Passenger information input
+Logistic Regression prediction
+SVM prediction
+KNN prediction
+Overall model results
+Technologies Used
+Python
+Pandas
+Scikit-learn
+Joblib
+Streamlit
+GitHub
+How to Run Locally
+
+Clone the repository:
+
+git clone https://github.com/YOUR-USERNAME/titanic-survival-prediction.git
+
+Open the project folder:
+
+cd titanic-survival-prediction
+
+Install the required libraries:
+
+pip install -r requirements.txt
+
+Run the Streamlit application:
+
+python -m streamlit run app.py
+
+The application will open in your browser.
+
+Disclaimer
+
+This project is for educational and machine learning practice purposes. The predictions are based on trained machine learning models and should not be considered historically certain outcomes.
+
+Author
+
+Shantanu Aptikar
