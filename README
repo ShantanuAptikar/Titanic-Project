@@ -1,4 +1,7 @@
 Titanic Survival Prediction using Machine Learning
+## 🚀 Live Demo
+
+[Click here to try the Titanic Survival Prediction App](https://titanic-survival-ml-project.streamlit.app/)
 Project Overview
 
 This project predicts whether a passenger would survive the Titanic disaster based on passenger information such as passenger class, age, sex, family information, fare, and port of embarkation.
